@@ -1,0 +1,1200 @@
+{
+  "workflows": [
+    {
+      "id": "54437e33-4fd6-454b-8c22-25f6085e10e1",
+      "workflowId": "2055583292556095489",
+      "name": "材质替换",
+      "sourceJson": {
+        "76": {
+          "inputs": {
+            "image": "clipspace/f771efdd153e611e2d820dea17438a01_3971e2f3f1cb27b60320a8db262e04114ae1cf838dbbbf013734f6cb8507599d.png [input]"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "120": {
+          "inputs": {
+            "sampler_name": "euler"
+          },
+          "class_type": "KSamplerSelect",
+          "_meta": {
+            "title": "KSamplerSelect"
+          }
+        },
+        "121": {
+          "inputs": {
+            "noise": [
+              "123",
+              0
+            ],
+            "guider": [
+              "206",
+              0
+            ],
+            "sampler": [
+              "120",
+              0
+            ],
+            "sigmas": [
+              "132",
+              0
+            ],
+            "latent_image": [
+              "231",
+              0
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "SamplerCustomAdvanced"
+          }
+        },
+        "122": {
+          "inputs": {
+            "samples": [
+              "121",
+              0
+            ],
+            "vae": [
+              "125",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "123": {
+          "inputs": {
+            "noise_seed": 8888
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "RandomNoise"
+          }
+        },
+        "124": {
+          "inputs": {
+            "unet_name": "Flux2-Klein-9B-True-v2-bf16.safetensors",
+            "weight_dtype": "default"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "125": {
+          "inputs": {
+            "vae_name": "flux2-vae.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "Load VAE"
+          }
+        },
+        "128": {
+          "inputs": {
+            "clip_name": "qwen_3_8b.safetensors",
+            "type": "flux2",
+            "device": "default"
+          },
+          "class_type": "CLIPLoader",
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "129": {
+          "inputs": {
+            "text": [
+              "255",
+              0
+            ],
+            "clip": [
+              "128",
+              0
+            ]
+          },
+          "class_type": "CLIPTextEncode",
+          "_meta": {
+            "title": "CLIP Text Encode (Prompt)"
+          }
+        },
+        "132": {
+          "inputs": {
+            "steps": 4,
+            "width": [
+              "133",
+              0
+            ],
+            "height": [
+              "133",
+              1
+            ]
+          },
+          "class_type": "Flux2Scheduler",
+          "_meta": {
+            "title": "Flux2Scheduler"
+          }
+        },
+        "133": {
+          "inputs": {
+            "image": [
+              "218",
+              0
+            ]
+          },
+          "class_type": "GetImageSize",
+          "_meta": {
+            "title": "GetImageSize"
+          }
+        },
+        "166": {
+          "inputs": {
+            "pixels": [
+              "218",
+              0
+            ],
+            "vae": [
+              "125",
+              0
+            ]
+          },
+          "class_type": "VAEEncode",
+          "_meta": {
+            "title": "VAE Encode"
+          }
+        },
+        "167": {
+          "inputs": {
+            "conditioning": [
+              "129",
+              0
+            ],
+            "latent": [
+              "166",
+              0
+            ]
+          },
+          "class_type": "ReferenceLatent",
+          "_meta": {
+            "title": "ReferenceLatent"
+          }
+        },
+        "184": {
+          "inputs": {
+            "pixels": [
+              "187",
+              0
+            ],
+            "vae": [
+              "125",
+              0
+            ]
+          },
+          "class_type": "VAEEncode",
+          "_meta": {
+            "title": "VAE Encode"
+          }
+        },
+        "186": {
+          "inputs": {
+            "conditioning": [
+              "167",
+              0
+            ],
+            "latent": [
+              "184",
+              0
+            ]
+          },
+          "class_type": "ReferenceLatent",
+          "_meta": {
+            "title": "ReferenceLatent"
+          }
+        },
+        "187": {
+          "inputs": {
+            "upscale_method": "lanczos",
+            "megapixels": 1.0000000000000002,
+            "resolution_steps": 1,
+            "image": [
+              "191",
+              0
+            ]
+          },
+          "class_type": "ImageScaleToTotalPixels",
+          "_meta": {
+            "title": "Scale Image to Total Pixels"
+          }
+        },
+        "191": {
+          "inputs": {
+            "image": "pasted/a90c862c8d483f75b756e62096a4bd39ba3c211c62069dee38b03861a63cae3e.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          }
+        },
+        "206": {
+          "inputs": {
+            "model": [
+              "124",
+              0
+            ],
+            "conditioning": [
+              "186",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "BasicGuider"
+          }
+        },
+        "207": {
+          "inputs": {
+            "rgthree_comparer": {
+              "images": [
+                {
+                  "name": "A",
+                  "selected": true,
+                  "url": "/view?filename=rgthree.compare._temp_ulajs_00003_assdb_1777425399.jpg&type=temp&subfolder=&rand=0.6450326250694831&Rh-Comfy-Auth=eyJ1c2VySWQiOiJmNzcxZWZkZDE1M2U2MTFlMmQ4MjBkZWExNzQzOGEwMSIsInNpZ25FeHBpcmUiOjE3NzgwMjk3NjM5NzYsInRzIjoxNzc3NDI0OTYzOTc2LCJzaWduIjoiYTk4YjcwYjU0NDAxODMyZTQ3ZGQzZTA5ZmY4NTZlYWYifQ==&Rh-Identify=f771efdd153e611e2d820dea17438a01"
+                },
+                {
+                  "name": "B",
+                  "selected": true,
+                  "url": "/view?filename=rgthree.compare._temp_ulajs_00004_qcjyu_1777425401.jpg&type=temp&subfolder=&rand=0.89387175127096&Rh-Comfy-Auth=eyJ1c2VySWQiOiJmNzcxZWZkZDE1M2U2MTFlMmQ4MjBkZWExNzQzOGEwMSIsInNpZ25FeHBpcmUiOjE3NzgwMjk3NjM5NzYsInRzIjoxNzc3NDI0OTYzOTc2LCJzaWduIjoiYTk4YjcwYjU0NDAxODMyZTQ3ZGQzZTA5ZmY4NTZlYWYifQ==&Rh-Identify=f771efdd153e611e2d820dea17438a01"
+                }
+              ]
+            },
+            "image_a": [
+              "233",
+              0
+            ],
+            "image_b": [
+              "76",
+              0
+            ]
+          },
+          "class_type": "Image Comparer (rgthree)",
+          "_meta": {
+            "title": "Image Comparer (rgthree)"
+          }
+        },
+        "218": {
+          "inputs": {
+            "aspect_ratio": "original",
+            "proportional_width": 1,
+            "proportional_height": 1,
+            "fit": "fill",
+            "method": "lanczos",
+            "round_to_multiple": "8",
+            "scale_to_side": "longest",
+            "scale_to_length": 2048,
+            "background_color": "#000000",
+            "image": [
+              "264",
+              1
+            ],
+            "mask": [
+              "227",
+              0
+            ]
+          },
+          "class_type": "LayerUtility: ImageScaleByAspectRatio V2",
+          "_meta": {
+            "title": "LayerUtility: ImageScaleByAspectRatio V2"
+          }
+        },
+        "220": {
+          "inputs": {
+            "mask": [
+              "234",
+              0
+            ]
+          },
+          "class_type": "MaskPreview",
+          "_meta": {
+            "title": "Preview Mask"
+          }
+        },
+        "227": {
+          "inputs": {
+            "masks": [
+              "273",
+              0
+            ]
+          },
+          "class_type": "Mask Fill Holes",
+          "_meta": {
+            "title": "Mask Fill Holes"
+          }
+        },
+        "230": {
+          "inputs": {
+            "fit": "fill",
+            "method": "lanczos",
+            "scale_as": [
+              "76",
+              0
+            ],
+            "image": [
+              "122",
+              0
+            ],
+            "mask": [
+              "234",
+              0
+            ]
+          },
+          "class_type": "LayerUtility: ImageMaskScaleAs",
+          "_meta": {
+            "title": "LayerUtility: Image Mask Scale As"
+          }
+        },
+        "231": {
+          "inputs": {
+            "samples": [
+              "166",
+              0
+            ],
+            "mask": [
+              "218",
+              1
+            ]
+          },
+          "class_type": "SetLatentNoiseMask",
+          "_meta": {
+            "title": "Set Latent Noise Mask"
+          }
+        },
+        "233": {
+          "inputs": {
+            "invert_mask": false,
+            "blend_mode": "normal",
+            "opacity": 100,
+            "background_image": [
+              "76",
+              0
+            ],
+            "layer_image": [
+              "230",
+              0
+            ],
+            "layer_mask": [
+              "230",
+              1
+            ]
+          },
+          "class_type": "LayerUtility: ImageBlend",
+          "_meta": {
+            "title": "LayerUtility: ImageBlend"
+          }
+        },
+        "234": {
+          "inputs": {
+            "invert_mask": false,
+            "grow": 20,
+            "blur": 8,
+            "mask": [
+              "218",
+              1
+            ]
+          },
+          "class_type": "LayerMask: MaskGrow",
+          "_meta": {
+            "title": "LayerMask: MaskGrow"
+          }
+        },
+        "235": {
+          "inputs": {
+            "invert_mask": false,
+            "grow": 16,
+            "blur": 0,
+            "mask": [
+              "76",
+              1
+            ]
+          },
+          "class_type": "LayerMask: MaskGrow",
+          "_meta": {
+            "title": "LayerMask: MaskGrow"
+          }
+        },
+        "236": {
+          "inputs": {
+            "fit": "fill",
+            "method": "lanczos",
+            "scale_as": [
+              "76",
+              0
+            ],
+            "mask": [
+              "235",
+              0
+            ]
+          },
+          "class_type": "LayerUtility: ImageMaskScaleAs",
+          "_meta": {
+            "title": "LayerUtility: Image Mask Scale As"
+          }
+        },
+        "239": {
+          "inputs": {
+            "mask": [
+              "227",
+              0
+            ]
+          },
+          "class_type": "MaskPreview",
+          "_meta": {
+            "title": "Preview Mask"
+          }
+        },
+        "242": {
+          "inputs": {
+            "side": "Shortest",
+            "image": [
+              "218",
+              0
+            ]
+          },
+          "class_type": "easy imageSizeBySide",
+          "_meta": {
+            "title": "ImageSize (Side)"
+          }
+        },
+        "243": {
+          "inputs": {
+            "images": [
+              "218",
+              0
+            ]
+          },
+          "class_type": "PreviewImage",
+          "_meta": {
+            "title": "Preview Image"
+          }
+        },
+        "255": {
+          "inputs": {
+            "positive": "把图一的物体替换为图二的材质。"
+          },
+          "class_type": "easy positive",
+          "_meta": {
+            "title": "Positive"
+          }
+        },
+        "257": {
+          "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+              "233",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "263": {
+          "inputs": {
+            "text": "沙发"
+          },
+          "class_type": "CR Text",
+          "_meta": {
+            "title": "🔤 CR Text"
+          }
+        },
+        "264": {
+          "inputs": {
+            "prompt": [
+              "269",
+              0
+            ],
+            "threshold": 0.4,
+            "keep_model_loaded": false,
+            "add_background": "none",
+            "detection_limit": -1,
+            "sam3_model": [
+              "268",
+              0
+            ],
+            "images": [
+              "76",
+              0
+            ]
+          },
+          "class_type": "easy sam3ImageSegmentation",
+          "_meta": {
+            "title": "Sam3 Image Segmentation"
+          }
+        },
+        "266": {
+          "inputs": {
+            "mask": [
+              "264",
+              0
+            ]
+          },
+          "class_type": "MaskPreview",
+          "_meta": {
+            "title": "Preview Mask"
+          }
+        },
+        "268": {
+          "inputs": {
+            "model": "sam3.pt",
+            "segmentor": "image",
+            "device": "cuda",
+            "precision": "fp32"
+          },
+          "class_type": "easy sam3ModelLoader",
+          "_meta": {
+            "title": "Load SAM3 Model"
+          }
+        },
+        "269": {
+          "inputs": {
+            "from_translate": "auto",
+            "to_translate": "english",
+            "add_proxies": false,
+            "proxies": "",
+            "auth_data": "",
+            "service": "GoogleTranslator",
+            "text": [
+              "263",
+              0
+            ],
+            "hide_proxy": "proxy_hide",
+            "hide_authorization": "authorization_hide"
+          },
+          "class_type": "DeepTranslatorTextNode",
+          "_meta": {
+            "title": "Deep Translator Text Node"
+          }
+        },
+        "273": {
+          "inputs": {
+            "masks_a": [
+              "264",
+              0
+            ],
+            "masks_b": [
+              "236",
+              1
+            ]
+          },
+          "class_type": "Masks Add",
+          "_meta": {
+            "title": "Masks Add"
+          }
+        },
+        "274": {
+          "inputs": {
+            "mask": [
+              "236",
+              1
+            ]
+          },
+          "class_type": "MaskPreview",
+          "_meta": {
+            "title": "Preview Mask"
+          }
+        },
+        "275": {
+          "inputs": {
+            "mask": [
+              "218",
+              1
+            ]
+          },
+          "class_type": "MaskPreview",
+          "_meta": {
+            "title": "Preview Mask"
+          }
+        }
+      },
+      "nodes": [
+        {
+          "nodeId": "76",
+          "fieldName": "image",
+          "label": "Load Image - image",
+          "inputType": "image",
+          "defaultValue": "",
+          "visible": true,
+          "alias": "产品图",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "120",
+          "fieldName": "sampler_name",
+          "label": "KSamplerSelect - sampler_name",
+          "inputType": "text",
+          "defaultValue": "euler",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "123",
+          "fieldName": "noise_seed",
+          "label": "RandomNoise - noise_seed",
+          "inputType": "text",
+          "defaultValue": "8888",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "124",
+          "fieldName": "unet_name",
+          "label": "Load Diffusion Model - unet_name",
+          "inputType": "text",
+          "defaultValue": "Flux2-Klein-9B-True-v2-bf16.safetensors",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "124",
+          "fieldName": "weight_dtype",
+          "label": "Load Diffusion Model - weight_dtype",
+          "inputType": "text",
+          "defaultValue": "default",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "125",
+          "fieldName": "vae_name",
+          "label": "Load VAE - vae_name",
+          "inputType": "text",
+          "defaultValue": "flux2-vae.safetensors",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "128",
+          "fieldName": "clip_name",
+          "label": "Load CLIP - clip_name",
+          "inputType": "text",
+          "defaultValue": "qwen_3_8b.safetensors",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "128",
+          "fieldName": "type",
+          "label": "Load CLIP - type",
+          "inputType": "text",
+          "defaultValue": "flux2",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "128",
+          "fieldName": "device",
+          "label": "Load CLIP - device",
+          "inputType": "text",
+          "defaultValue": "default",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "132",
+          "fieldName": "steps",
+          "label": "Flux2Scheduler - steps",
+          "inputType": "text",
+          "defaultValue": "4",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "187",
+          "fieldName": "upscale_method",
+          "label": "Scale Image to Total Pixels - upscale_method",
+          "inputType": "text",
+          "defaultValue": "lanczos",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "187",
+          "fieldName": "megapixels",
+          "label": "Scale Image to Total Pixels - megapixels",
+          "inputType": "text",
+          "defaultValue": "1.0000000000000002",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "187",
+          "fieldName": "resolution_steps",
+          "label": "Scale Image to Total Pixels - resolution_steps",
+          "inputType": "text",
+          "defaultValue": "1",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "191",
+          "fieldName": "image",
+          "label": "Load Image - image",
+          "inputType": "image",
+          "defaultValue": "",
+          "visible": true,
+          "alias": "参考材质",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "207",
+          "fieldName": "rgthree_comparer",
+          "label": "Image Comparer (rgthree) - rgthree_comparer",
+          "inputType": "text",
+          "defaultValue": "[object Object]",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "aspect_ratio",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - aspect_ratio",
+          "inputType": "text",
+          "defaultValue": "original",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "proportional_width",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - proportional_width",
+          "inputType": "text",
+          "defaultValue": "1",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "proportional_height",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - proportional_height",
+          "inputType": "text",
+          "defaultValue": "1",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "fit",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - fit",
+          "inputType": "text",
+          "defaultValue": "fill",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "method",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - method",
+          "inputType": "text",
+          "defaultValue": "lanczos",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "round_to_multiple",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - round_to_multiple",
+          "inputType": "text",
+          "defaultValue": "8",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "scale_to_side",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - scale_to_side",
+          "inputType": "text",
+          "defaultValue": "longest",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "scale_to_length",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - scale_to_length",
+          "inputType": "text",
+          "defaultValue": "2048",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "218",
+          "fieldName": "background_color",
+          "label": "LayerUtility: ImageScaleByAspectRatio V2 - background_color",
+          "inputType": "text",
+          "defaultValue": "#000000",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "230",
+          "fieldName": "fit",
+          "label": "LayerUtility: Image Mask Scale As - fit",
+          "inputType": "text",
+          "defaultValue": "fill",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "230",
+          "fieldName": "method",
+          "label": "LayerUtility: Image Mask Scale As - method",
+          "inputType": "text",
+          "defaultValue": "lanczos",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "233",
+          "fieldName": "invert_mask",
+          "label": "LayerUtility: ImageBlend - invert_mask",
+          "inputType": "text",
+          "defaultValue": "false",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "233",
+          "fieldName": "blend_mode",
+          "label": "LayerUtility: ImageBlend - blend_mode",
+          "inputType": "text",
+          "defaultValue": "normal",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "233",
+          "fieldName": "opacity",
+          "label": "LayerUtility: ImageBlend - opacity",
+          "inputType": "text",
+          "defaultValue": "100",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "234",
+          "fieldName": "invert_mask",
+          "label": "LayerMask: MaskGrow - invert_mask",
+          "inputType": "text",
+          "defaultValue": "false",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "234",
+          "fieldName": "grow",
+          "label": "LayerMask: MaskGrow - grow",
+          "inputType": "text",
+          "defaultValue": "20",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "234",
+          "fieldName": "blur",
+          "label": "LayerMask: MaskGrow - blur",
+          "inputType": "text",
+          "defaultValue": "8",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "235",
+          "fieldName": "invert_mask",
+          "label": "LayerMask: MaskGrow - invert_mask",
+          "inputType": "text",
+          "defaultValue": "false",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "235",
+          "fieldName": "grow",
+          "label": "LayerMask: MaskGrow - grow",
+          "inputType": "text",
+          "defaultValue": "16",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "235",
+          "fieldName": "blur",
+          "label": "LayerMask: MaskGrow - blur",
+          "inputType": "text",
+          "defaultValue": "0",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "236",
+          "fieldName": "fit",
+          "label": "LayerUtility: Image Mask Scale As - fit",
+          "inputType": "text",
+          "defaultValue": "fill",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "236",
+          "fieldName": "method",
+          "label": "LayerUtility: Image Mask Scale As - method",
+          "inputType": "text",
+          "defaultValue": "lanczos",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "242",
+          "fieldName": "side",
+          "label": "ImageSize (Side) - side",
+          "inputType": "text",
+          "defaultValue": "Shortest",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "255",
+          "fieldName": "positive",
+          "label": "Positive - positive",
+          "inputType": "text",
+          "defaultValue": "把图一的物体替换为图二的材质。",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "257",
+          "fieldName": "filename_prefix",
+          "label": "Save Image - filename_prefix",
+          "inputType": "text",
+          "defaultValue": "ComfyUI",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "263",
+          "fieldName": "text",
+          "label": "🔤 CR Text - text",
+          "inputType": "text",
+          "defaultValue": "沙发",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "264",
+          "fieldName": "threshold",
+          "label": "Sam3 Image Segmentation - threshold",
+          "inputType": "text",
+          "defaultValue": "0.4",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "264",
+          "fieldName": "keep_model_loaded",
+          "label": "Sam3 Image Segmentation - keep_model_loaded",
+          "inputType": "text",
+          "defaultValue": "false",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "264",
+          "fieldName": "add_background",
+          "label": "Sam3 Image Segmentation - add_background",
+          "inputType": "text",
+          "defaultValue": "none",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "264",
+          "fieldName": "detection_limit",
+          "label": "Sam3 Image Segmentation - detection_limit",
+          "inputType": "text",
+          "defaultValue": "-1",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "268",
+          "fieldName": "model",
+          "label": "Load SAM3 Model - model",
+          "inputType": "text",
+          "defaultValue": "sam3.pt",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "268",
+          "fieldName": "segmentor",
+          "label": "Load SAM3 Model - segmentor",
+          "inputType": "text",
+          "defaultValue": "image",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "268",
+          "fieldName": "device",
+          "label": "Load SAM3 Model - device",
+          "inputType": "text",
+          "defaultValue": "cuda",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "268",
+          "fieldName": "precision",
+          "label": "Load SAM3 Model - precision",
+          "inputType": "text",
+          "defaultValue": "fp32",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "from_translate",
+          "label": "Deep Translator Text Node - from_translate",
+          "inputType": "text",
+          "defaultValue": "auto",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "to_translate",
+          "label": "Deep Translator Text Node - to_translate",
+          "inputType": "text",
+          "defaultValue": "english",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "add_proxies",
+          "label": "Deep Translator Text Node - add_proxies",
+          "inputType": "text",
+          "defaultValue": "false",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "proxies",
+          "label": "Deep Translator Text Node - proxies",
+          "inputType": "text",
+          "defaultValue": "",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "auth_data",
+          "label": "Deep Translator Text Node - auth_data",
+          "inputType": "text",
+          "defaultValue": "",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "service",
+          "label": "Deep Translator Text Node - service",
+          "inputType": "text",
+          "defaultValue": "GoogleTranslator",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "hide_proxy",
+          "label": "Deep Translator Text Node - hide_proxy",
+          "inputType": "text",
+          "defaultValue": "proxy_hide",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        },
+        {
+          "nodeId": "269",
+          "fieldName": "hide_authorization",
+          "label": "Deep Translator Text Node - hide_authorization",
+          "inputType": "text",
+          "defaultValue": "authorization_hide",
+          "visible": false,
+          "alias": "",
+          "aiApiKey": ""
+        }
+      ]
+    }
+  ],
+  "folders": [],
+  "agents": [],
+  "agentInputPresets": []
+}

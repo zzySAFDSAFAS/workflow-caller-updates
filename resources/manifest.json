@@ -1,0 +1,17 @@
+{
+  "appId": "workflow-caller",
+  "enabled": true,
+  "updatedAt": "2026-05-16",
+  "workflows": [],
+  "folders": [],
+  "agents": [],
+  "agentInputPresets": [],
+  "resources": [
+    {
+      "type": "config",
+      "name": "材质替换",
+      "version": "1.0.0",
+      "url": "https://raw.githubusercontent.com/zzySAFDSAFAS/workflow-caller-updates/main/resources/configs/material-replacement.json"
+    }
+  ]
+}

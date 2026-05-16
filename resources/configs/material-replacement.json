@@ -1027,7 +1027,7 @@
           "label": "🔤 CR Text - text",
           "inputType": "text",
           "defaultValue": "沙发",
-          "visible": false,
+          "visible": true,
           "alias": "",
           "aiApiKey": ""
         },

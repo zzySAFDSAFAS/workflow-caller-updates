@@ -1,18 +1,18 @@
 {
   "appId": "workflow-caller",
-  "latestVersion": "2.2.4",
+  "latestVersion": "2.2.7",
   "minSupportedVersion": "2.2.4",
-  "releaseDate": "2026-05-16",
-  "title": "当前已是最新版本",
-  "summary": "这是 Workflow Caller 的公开更新信息文件。后续发布新版本时，只需要更新这里的版本号、说明和下载地址。",
+  "releaseDate": "2026-05-18",
+  "title": "发现新版本 2.2.7",
+  "summary": "窗口与安装包名称统一为工作流系统，并优化默认窗口和工具箱侧边栏显示。",
   "notes": [
-    "首次建立 GitHub 更新提示机制",
-    "应用启动后可以读取此文件判断是否有新版本",
-    "此仓库只存放公开更新信息，不存放源码或密钥"
+    "应用窗口标题改为“工作流系统”",
+    "启动后默认最大化显示主窗口",
+    "工具箱工具名称字重调轻，和工作流列表风格更一致",
+    "安装包与快捷方式名称同步改为“工作流系统”"
   ],
   "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases",
-  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/changelog.md",
+  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.2.7.md",
   "forceUpdate": false,
   "enabled": true
 }
-

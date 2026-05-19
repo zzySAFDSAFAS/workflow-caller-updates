@@ -10,7 +10,7 @@
     "云端资源与本地同 ID 但内容不同时，可勾选选择是否覆盖",
     "覆盖选择支持工作流、智能体、文件夹和工具箱快捷方式"
   ],
-  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/tag/v2.2.9",
+  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.2.9/Setup.2.2.9.exe",
   "installerUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.2.9/Setup.2.2.9.exe",
   "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.2.9.md",
   "forceUpdate": false,

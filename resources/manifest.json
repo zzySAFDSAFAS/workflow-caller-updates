@@ -16,7 +16,7 @@
     {
       "type": "config",
       "name": "当前工作流和智能体",
-      "version": "2.3.0",
+      "version": "2.3.1",
       "url": "https://raw.githubusercontent.com/zzySAFDSAFAS/workflow-caller-updates/main/resources/configs/current-workflows-agents.json"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "appId": "workflow-caller",
   "enabled": true,
-  "updatedAt": "2026-05-18",
+  "updatedAt": "2026-05-19",
   "workflows": [],
   "folders": [],
   "agents": [],
@@ -16,7 +16,7 @@
     {
       "type": "config",
       "name": "当前工作流和智能体",
-      "version": "2.2.9",
+      "version": "2.3.0",
       "url": "https://raw.githubusercontent.com/zzySAFDSAFAS/workflow-caller-updates/main/resources/configs/current-workflows-agents.json"
     }
   ]

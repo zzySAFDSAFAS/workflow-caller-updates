@@ -1,18 +1,18 @@
 {
   "appId": "workflow-caller",
-  "latestVersion": "2.2.9",
+  "latestVersion": "2.3.0",
   "minSupportedVersion": "2.2.4",
   "releaseDate": "2026-05-19",
-  "title": "发现新版本 2.2.9",
-  "summary": "修复云端资源更新时工具箱快捷方式未同步的问题，并新增同 ID 资源覆盖选择弹窗。",
+  "title": "发现新版本 2.3.0",
+  "summary": "云端删除同步提示，防止误操作的 2 秒等待，以及最新工作流配置同步。",
   "notes": [
-    "修复云端资源更新时文件夹内工具箱快捷方式缺失的问题",
-    "云端资源与本地同 ID 但内容不同时，可勾选选择是否覆盖",
-    "覆盖选择支持工作流、智能体、文件夹和工具箱快捷方式"
+    "云端资源删除同步：作者删除后用户更新时会弹窗提示，可选择删除本地副本或保留",
+    "删除确认按钮新增 2 秒等待，防止误操作",
+    "同步最新工作流和智能体配置"
   ],
-  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.2.9/Setup.2.2.9.exe",
-  "installerUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.2.9/Setup.2.2.9.exe",
-  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.2.9.md",
+  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.0/Setup.2.3.0.exe",
+  "installerUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.0/Setup.2.3.0.exe",
+  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.3.0.md",
   "forceUpdate": false,
   "enabled": true
 }

@@ -2,7 +2,7 @@
   "appId": "workflow-caller",
   "latestVersion": "2.2.9",
   "minSupportedVersion": "2.2.4",
-  "releaseDate": "2026-05-18",
+  "releaseDate": "2026-05-19",
   "title": "发现新版本 2.2.9",
   "summary": "修复云端资源更新时工具箱快捷方式未同步的问题，并新增同 ID 资源覆盖选择弹窗。",
   "notes": [
@@ -10,7 +10,7 @@
     "云端资源与本地同 ID 但内容不同时，可勾选选择是否覆盖",
     "覆盖选择支持工作流、智能体、文件夹和工具箱快捷方式"
   ],
-  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases",
+  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/tag/v2.2.9",
   "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.2.9.md",
   "forceUpdate": false,
   "enabled": true

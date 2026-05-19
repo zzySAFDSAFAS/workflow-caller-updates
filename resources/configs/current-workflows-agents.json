@@ -4722,12 +4722,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_srahg_00001_tvlbq_1774238072.jpg&type=temp&subfolder=&rand=0.9907784331123767"
+                  "url": "/view?filename=rgthree.compare._temp_srahg_00001_tvlbq_1774238072.jpg&type=temp&subfolder=&rand=0.9907784331123767&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzQ4NDI4NDI2MTUsInRzIjoxNzc0MjM4MDQyNjE1LCJzaWduIjoiNzE2ZjU2YTU1Nzc2ZGJkYWZmM2U3MzE3MTIwOTk0NWMifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_srahg_00002_oflmz_1774238073.jpg&type=temp&subfolder=&rand=0.09006252440660323"
+                  "url": "/view?filename=rgthree.compare._temp_srahg_00002_oflmz_1774238073.jpg&type=temp&subfolder=&rand=0.09006252440660323&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzQ4NDI4NDI2MTUsInRzIjoxNzc0MjM4MDQyNjE1LCJzaWduIjoiNzE2ZjU2YTU1Nzc2ZGJkYWZmM2U3MzE3MTIwOTk0NWMifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 }
               ]
             },
@@ -7165,7 +7165,7 @@
             "quantization": "none",
             "keep_model_loaded": false,
             "temperature": 0.7,
-            "max_new_tokens": "",
+            "max_new_tokens": 2048,
             "min_pixels": 125440,
             "max_pixels": 334768,
             "seed": 763,
@@ -7264,12 +7264,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_yekvd_00001_uyrca_1766717723.jpg&type=temp&subfolder=&rand=0.6557352829868738"
+                  "url": "/view?filename=rgthree.compare._temp_yekvd_00001_uyrca_1766717723.jpg&type=temp&subfolder=&rand=0.6557352829868738&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NjczMjIzNDA2ODksInRzIjoxNzY2NzE3NTQwNjg5LCJzaWduIjoiNTE5ZmEwOGM4N2NmYzdkYzhiYjEyMDFjZTJmZDk2YzEifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_yekvd_00002_mlznb_1766717724.jpg&type=temp&subfolder=&rand=0.9175378718162335"
+                  "url": "/view?filename=rgthree.compare._temp_yekvd_00002_mlznb_1766717724.jpg&type=temp&subfolder=&rand=0.9175378718162335&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NjczMjIzNDA2ODksInRzIjoxNzY2NzE3NTQwNjg5LCJzaWduIjoiNTE5ZmEwOGM4N2NmYzdkYzhiYjEyMDFjZTJmZDk2YzEifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 }
               ]
             },
@@ -9245,12 +9245,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_xrcsn_00011_xqgjr_1768871766.jpg&type=temp&subfolder=&rand=0.45790225123993666"
+                  "url": "/view?filename=rgthree.compare._temp_xrcsn_00011_xqgjr_1768871766.jpg&type=temp&subfolder=&rand=0.45790225123993666&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3Njk0NzYyMTI2MTIsInRzIjoxNzY4ODcxNDEyNjEyLCJzaWduIjoiMTk2ZWNhOTg0NjIxNmNjZTg1Nzg1MjljZGFhNzY0NTkifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_xrcsn_00012_fpvuo_1768871768.jpg&type=temp&subfolder=&rand=0.7033754673402361"
+                  "url": "/view?filename=rgthree.compare._temp_xrcsn_00012_fpvuo_1768871768.jpg&type=temp&subfolder=&rand=0.7033754673402361&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3Njk0NzYyMTI2MTIsInRzIjoxNzY4ODcxNDEyNjEyLCJzaWduIjoiMTk2ZWNhOTg0NjIxNmNjZTg1Nzg1MjljZGFhNzY0NTkifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 }
               ]
             },
@@ -9442,7 +9442,7 @@
           "visible": true,
           "alias": "",
           "locked": false,
-          "lockedValue": ""
+          "lockedValue": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\workflow-caller\\clipboard-1778579309794.png"
         },
         {
           "nodeId": "159",
@@ -10739,12 +10739,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_vuvrn_00001_egsqt_1775620439.jpg&type=temp&subfolder=&rand=0.16841765704258338"
+                  "url": "/view?filename=rgthree.compare._temp_vuvrn_00001_egsqt_1775620439.jpg&type=temp&subfolder=&rand=0.16841765704258338&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzYyMjE2OTk5NTIsInRzIjoxNzc1NjE2ODk5OTUyLCJzaWduIjoiNmVmZDJjYjUxNjI1ZmQ4ZTg3MmYxODA1NGFlNGE0OTUifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_vuvrn_00002_phcig_1775620441.jpg&type=temp&subfolder=&rand=0.8442186772787663"
+                  "url": "/view?filename=rgthree.compare._temp_vuvrn_00002_phcig_1775620441.jpg&type=temp&subfolder=&rand=0.8442186772787663&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzYyMjE2OTk5NTIsInRzIjoxNzc1NjE2ODk5OTUyLCJzaWduIjoiNmVmZDJjYjUxNjI1ZmQ4ZTg3MmYxODA1NGFlNGE0OTUifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 }
               ]
             },
@@ -12409,12 +12409,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_fsmpy_00001_leexn_1776328072.jpg&type=temp&subfolder=&rand=0.1810782672763318"
+                  "url": "/view?filename=rgthree.compare._temp_fsmpy_00001_leexn_1776328072.jpg&type=temp&subfolder=&rand=0.1810782672763318&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzY5MzI2MjM1MTksInRzIjoxNzc2MzI3ODIzNTE5LCJzaWduIjoiZjU4Njk5N2ZmYzkyYTRmYjA3MTM2OTcyNGE2NzIyNzQifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_fsmpy_00002_opfkk_1776328073.jpg&type=temp&subfolder=&rand=0.09307107677911719"
+                  "url": "/view?filename=rgthree.compare._temp_fsmpy_00002_opfkk_1776328073.jpg&type=temp&subfolder=&rand=0.09307107677911719&Rh-Comfy-Auth=eyJ1c2VySWQiOiJkMTY1Y2NhMjQxODU3MGU1Y2QwNjRhNDM0Y2JlMGNhZiIsInNpZ25FeHBpcmUiOjE3NzY5MzI2MjM1MTksInRzIjoxNzc2MzI3ODIzNTE5LCJzaWduIjoiZjU4Njk5N2ZmYzkyYTRmYjA3MTM2OTcyNGE2NzIyNzQifQ==&Rh-Identify=d165cca2418570e5cd064a434cbe0caf"
                 }
               ]
             },
@@ -12990,17 +12990,17 @@
                 {
                   "name": "A1",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00010_xlcft_1777355077.jpg&type=temp&subfolder=&rand=0.9120437472041912"
+                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00010_xlcft_1777355077.jpg&type=temp&subfolder=&rand=0.9120437472041912&Rh-Comfy-Auth=eyJ1c2VySWQiOiI0NDRkOWIxNDIwNTg1ODI1OWEyZDFhZjIyNjg0NmQwNCIsInNpZ25FeHBpcmUiOjE3Nzc5NTMyNTQ0MTcsInRzIjoxNzc3MzQ4NDU0NDE3LCJzaWduIjoiMDhhNTFkNWRmYTg3YTY3YjZmMTMxNWE5N2MwODUxMDAifQ==&Rh-Identify=444d9b14205858259a2d1af226846d04"
                 },
                 {
                   "name": "A2",
                   "selected": false,
-                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00011_jblph_1777355077.jpg&type=temp&subfolder=&rand=0.8269813184141998"
+                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00011_jblph_1777355077.jpg&type=temp&subfolder=&rand=0.8269813184141998&Rh-Comfy-Auth=eyJ1c2VySWQiOiI0NDRkOWIxNDIwNTg1ODI1OWEyZDFhZjIyNjg0NmQwNCIsInNpZ25FeHBpcmUiOjE3Nzc5NTMyNTQ0MTcsInRzIjoxNzc3MzQ4NDU0NDE3LCJzaWduIjoiMDhhNTFkNWRmYTg3YTY3YjZmMTMxNWE5N2MwODUxMDAifQ==&Rh-Identify=444d9b14205858259a2d1af226846d04"
                 },
                 {
                   "name": "B1",
                   "selected": true,
-                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00012_pesob_1777355079.jpg&type=temp&subfolder=&rand=0.34132652621985426"
+                  "url": "/view?filename=rgthree.compare._temp_kuhfl_00012_pesob_1777355079.jpg&type=temp&subfolder=&rand=0.34132652621985426&Rh-Comfy-Auth=eyJ1c2VySWQiOiI0NDRkOWIxNDIwNTg1ODI1OWEyZDFhZjIyNjg0NmQwNCIsInNpZ25FeHBpcmUiOjE3Nzc5NTMyNTQ0MTcsInRzIjoxNzc3MzQ4NDU0NDE3LCJzaWduIjoiMDhhNTFkNWRmYTg3YTY3YjZmMTMxNWE5N2MwODUxMDAifQ==&Rh-Identify=444d9b14205858259a2d1af226846d04"
                 }
               ]
             },
@@ -21348,104 +21348,6 @@
       "parentId": "79929226-ebb5-4667-a5a8-b62a8b844859"
     }
   ],
-  "folders": [
-    {
-      "id": "8bd6abb8-99f6-40a5-8339-a7043fa0ae28",
-      "name": "九宫格 _ 视频",
-      "workflowIds": [
-        "3d5f00c7-2e0a-4c1c-bb5c-78bf25de8880",
-        "41022264-9bc3-43ce-b00c-f54e76cff98c",
-        "8d1ceb1c-3600-477b-b87a-0e295565a266",
-        "53984e3f-1057-4a83-b861-311b20d33858"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "64e20499-d421-43ca-aa46-58c5ccc22fcc",
-      "name": "复刻 _ 视频（大致相同）",
-      "workflowIds": [
-        "e9341c99-236e-4eb0-b165-6e2fc4749888",
-        "dee9a371-4112-4e0a-a4f5-385dc17cb182",
-        "407e6879-1f9e-40fe-a244-13f78462e012"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "48514bf3-8a7a-47ec-a3e0-0f593e503195",
-      "name": "文本复刻_视频（规避版权）",
-      "workflowIds": [
-        "fbe5b6a7-c074-4fd6-9aeb-026f75879ffa",
-        "364d2c53-0a04-4ce1-9dbb-813b9ab05992",
-        "829d884f-2d7d-4eeb-ab98-263af3a6d11c",
-        "79929226-ebb5-4667-a5a8-b62a8b844859"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "7e7c3d16-1245-4687-a906-72b591e7b7fd",
-      "name": "单镜头 _ 视频",
-      "workflowIds": [
-        "af2f6b0e-4f4a-4fc4-8dc3-e911b581eb75",
-        "4a1aea72-7fb3-4b47-8fc3-9c6204fb1526",
-        "ca3505d4-d2a8-419e-82be-df0becd83738",
-        "b69a33a0-8bbe-4122-9270-629f07c84eb0"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "56e60fc0-3038-45f0-a6c3-0a345fb2c334",
-      "name": "生图系统",
-      "workflowIds": [
-        "0facc4b2-178e-4a59-af16-9c2f8d2061f8",
-        "bf9494e7-4448-474f-94f9-df9697d828c8",
-        "08d3acc0-bfd8-430b-9bd4-39be21a91e50",
-        "0d34a482-0377-46f1-bf27-c72bf7006c37",
-        "df76cb35-e040-462a-9189-80e03684e18c",
-        "216b75ed-fb24-46ae-b88e-369af7953da7",
-        "f9e2500a-fdcf-4086-ad5a-d819950ce9c4",
-        "54829d20-0122-47c7-ad78-409e9deb8350",
-        "d2747f9d-4f29-45c0-8bad-df837f306e93",
-        "cd0e48fb-8d3a-4072-9f9b-c58c0b1c674c",
-        "f68dccbb-cb07-4031-af13-b6d490072315",
-        "3ddd9566-86d8-4158-a5bd-d4943cff10a4",
-        "8b47e01f-a854-4c71-98b8-be5c3c350500",
-        "282d192a-6d9b-4aad-8942-d2bc38339dce",
-        "2e61c2a7-868d-4829-9749-094ab2994610",
-        "a3596ec1-af4c-455a-ba6f-b2397719f6a0",
-        "f055990e-67c3-481c-83b5-3ff01c8e50d8"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "5d83f39f-ac1e-4632-afbd-b70871af577d",
-      "name": "未分类 _ 工作流",
-      "workflowIds": [
-        "c6e5fced-ba79-407b-9b52-5fad9f27b6aa",
-        "50963241-61d0-4571-82e3-66ea34eea344",
-        "08e3aff5-ad58-48a7-8caa-fb2a360a4a7f",
-        "3c9cd445-0a0b-47cf-bca3-68986b9aa374",
-        "0d3be2fa-a0dd-4bde-9021-8142271f83a8",
-        "dbfed6ad-565c-435e-97b3-911838c485f4",
-        "46fc863b-6286-4a58-a37b-087999a4b053",
-        "44737df1-5ab4-43a3-9705-b467747e197b",
-        "7b1b1513-b902-49e1-b16a-6a9c7d9e52b7",
-        "e1cdee12-6710-4d0f-b51d-aecac232bb50",
-        "1123103d-3228-425c-96d7-084602fc1f80"
-      ],
-      "collapsed": true
-    },
-    {
-      "id": "cb773754-4bb8-42fd-acf4-a4e293ef813e",
-      "name": "未分类 _ 智能体",
-      "workflowIds": [
-        "a43f9279-f856-4e75-b7f9-8aafa2aee38f",
-        "dda04c8e-2ebd-4dfa-ba42-a5f8f5f466bc",
-        "470f763b-d070-4f22-a1e3-c98e0d8f9562",
-        "9e8e35ef-bbcb-4b33-9231-9364b2bc7a66"
-      ],
-      "collapsed": true
-    }
-  ],
   "agents": [
     {
       "id": "41022264-9bc3-43ce-b00c-f54e76cff98c",
@@ -21554,6 +21456,105 @@
       "parentId": "364d2c53-0a04-4ce1-9dbb-813b9ab05992"
     }
   ],
+  "folders": [
+    {
+      "id": "8bd6abb8-99f6-40a5-8339-a7043fa0ae28",
+      "name": "九宫格 _ 视频",
+      "workflowIds": [
+        "3d5f00c7-2e0a-4c1c-bb5c-78bf25de8880",
+        "41022264-9bc3-43ce-b00c-f54e76cff98c",
+        "8d1ceb1c-3600-477b-b87a-0e295565a266",
+        "53984e3f-1057-4a83-b861-311b20d33858"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "64e20499-d421-43ca-aa46-58c5ccc22fcc",
+      "name": "复刻 _ 视频（大致相同）",
+      "workflowIds": [
+        "21ab8de8-4f01-4838-9a0c-6aee3b1629cb",
+        "e9341c99-236e-4eb0-b165-6e2fc4749888",
+        "dee9a371-4112-4e0a-a4f5-385dc17cb182",
+        "407e6879-1f9e-40fe-a244-13f78462e012"
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "48514bf3-8a7a-47ec-a3e0-0f593e503195",
+      "name": "文本复刻_视频（规避版权）",
+      "workflowIds": [
+        "fbe5b6a7-c074-4fd6-9aeb-026f75879ffa",
+        "364d2c53-0a04-4ce1-9dbb-813b9ab05992",
+        "829d884f-2d7d-4eeb-ab98-263af3a6d11c",
+        "79929226-ebb5-4667-a5a8-b62a8b844859"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "7e7c3d16-1245-4687-a906-72b591e7b7fd",
+      "name": "单镜头 _ 视频",
+      "workflowIds": [
+        "af2f6b0e-4f4a-4fc4-8dc3-e911b581eb75",
+        "4a1aea72-7fb3-4b47-8fc3-9c6204fb1526",
+        "ca3505d4-d2a8-419e-82be-df0becd83738",
+        "b69a33a0-8bbe-4122-9270-629f07c84eb0"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "56e60fc0-3038-45f0-a6c3-0a345fb2c334",
+      "name": "生图系统",
+      "workflowIds": [
+        "0facc4b2-178e-4a59-af16-9c2f8d2061f8",
+        "bf9494e7-4448-474f-94f9-df9697d828c8",
+        "08d3acc0-bfd8-430b-9bd4-39be21a91e50",
+        "0d34a482-0377-46f1-bf27-c72bf7006c37",
+        "df76cb35-e040-462a-9189-80e03684e18c",
+        "216b75ed-fb24-46ae-b88e-369af7953da7",
+        "f9e2500a-fdcf-4086-ad5a-d819950ce9c4",
+        "54829d20-0122-47c7-ad78-409e9deb8350",
+        "d2747f9d-4f29-45c0-8bad-df837f306e93",
+        "cd0e48fb-8d3a-4072-9f9b-c58c0b1c674c",
+        "f68dccbb-cb07-4031-af13-b6d490072315",
+        "3ddd9566-86d8-4158-a5bd-d4943cff10a4",
+        "8b47e01f-a854-4c71-98b8-be5c3c350500",
+        "282d192a-6d9b-4aad-8942-d2bc38339dce",
+        "2e61c2a7-868d-4829-9749-094ab2994610",
+        "a3596ec1-af4c-455a-ba6f-b2397719f6a0",
+        "f055990e-67c3-481c-83b5-3ff01c8e50d8"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "5d83f39f-ac1e-4632-afbd-b70871af577d",
+      "name": "未分类 _ 工作流",
+      "workflowIds": [
+        "c6e5fced-ba79-407b-9b52-5fad9f27b6aa",
+        "50963241-61d0-4571-82e3-66ea34eea344",
+        "08e3aff5-ad58-48a7-8caa-fb2a360a4a7f",
+        "3c9cd445-0a0b-47cf-bca3-68986b9aa374",
+        "0d3be2fa-a0dd-4bde-9021-8142271f83a8",
+        "dbfed6ad-565c-435e-97b3-911838c485f4",
+        "46fc863b-6286-4a58-a37b-087999a4b053",
+        "44737df1-5ab4-43a3-9705-b467747e197b",
+        "7b1b1513-b902-49e1-b16a-6a9c7d9e52b7",
+        "e1cdee12-6710-4d0f-b51d-aecac232bb50",
+        "1123103d-3228-425c-96d7-084602fc1f80"
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "cb773754-4bb8-42fd-acf4-a4e293ef813e",
+      "name": "未分类 _ 智能体",
+      "workflowIds": [
+        "a43f9279-f856-4e75-b7f9-8aafa2aee38f",
+        "dda04c8e-2ebd-4dfa-ba42-a5f8f5f466bc",
+        "470f763b-d070-4f22-a1e3-c98e0d8f9562",
+        "9e8e35ef-bbcb-4b33-9231-9364b2bc7a66"
+      ],
+      "collapsed": true
+    }
+  ],
   "agentInputPresets": [
     {
       "id": "96b36428-abe2-4f09-a91b-39be53e6cb85",
@@ -21579,6 +21580,14 @@
       "id": "2b935a27-5eb7-4e49-9d59-00dd7c2526c8",
       "name": "（三图）严格按照分镜图",
       "text": "图一是分镜图，图二图三是产品白底图，严格按照分镜图生成。"
+    }
+  ],
+  "toolboxShortcuts": [
+    {
+      "id": "21ab8de8-4f01-4838-9a0c-6aee3b1629cb",
+      "name": "步骤一 获取视频截图",
+      "type": "toolbox",
+      "toolId": "video_segments"
     }
   ]
 }

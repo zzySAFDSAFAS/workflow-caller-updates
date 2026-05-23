@@ -1,18 +1,18 @@
 {
   "appId": "workflow-caller",
-  "latestVersion": "2.3.1",
+  "latestVersion": "2.3.2",
   "minSupportedVersion": "2.2.4",
-  "releaseDate": "2026-05-19",
-  "title": "发现新版本 2.3.1",
-  "summary": "云端已删除资源会纳入同步确认，确认同步后其他电脑也会删除对应本地副本。",
+  "releaseDate": "2026-05-23",
+  "title": "New version 2.3.2 available",
+  "summary": "Adds new image/video generation tools, task completion sound, and the latest shared workflow, agent, folder, and toolbox shortcut configuration.",
   "notes": [
-    "云端更新弹窗会显示作者已删除的工作流、智能体或工具",
-    "用户点击确认同步后，本地对应云端资源会一并删除",
-    "同步最新工作流、智能体、文件夹和工具箱快捷方式配置"
+    "Added Banana Pro, Seedance image-to-video, and GPT-2 tool entries",
+    "Added task completion sound and improved toolbox task/output experience",
+    "Synced the latest workflows, agents, folders, and toolbox shortcuts"
   ],
-  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.1/Setup.2.3.1.exe",
-  "installerUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.1/Setup.2.3.1.exe",
-  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.3.1.md",
+  "downloadUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.2/Setup.2.3.2.exe",
+  "installerUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/releases/download/v2.3.2/Setup.2.3.2.exe",
+  "changelogUrl": "https://github.com/zzySAFDSAFAS/workflow-caller-updates/blob/main/releases/2.3.2.md",
   "forceUpdate": false,
   "enabled": true
 }

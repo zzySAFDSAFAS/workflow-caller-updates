@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.2 - 2026-05-23
+
+- Added Banana Pro, Seedance image-to-video, and GPT-2 tool entries.
+- Added task completion sound and voice preview resources, with toolbox task/output refinements.
+- Synced the latest workflows, agents, folders, and toolbox shortcuts.
+
 ## 2.3.1 - 2026-05-19
 
 - 云端更新弹窗会显示作者已从云端删除的工作流、智能体或工具。
